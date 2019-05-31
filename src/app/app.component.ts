@@ -4,12 +4,16 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
     <h3>{{title}}</h3>
-    <h5>Display : {{display_data}}</h5>`,
+    <p>Display : {{display_data}}</p>
+    <p>Display String  : {{display_data2}}</p>`,
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
   title = 'Angular Assignment';
   display_data = "Test Data";
-  display_data2:
+  display_data2:string;
+  constructor(){
+    this.display_data2="My name is Moupiya."
+  }
   
 }
