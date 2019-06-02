@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
     <h3>{{title}}</h3>
-    <p>Property Binding : <input type = "text" [value]="display_data1" /></p>
+    <div class="label">Property Binding </div>
+    <div class="display_container"><input type = "text" [value]="display_data1" /></div>
     <p>Event Binding : <input type = "text" (input)="display_data_fn($event.target.value)" /></p>
     <p>Message : {{ display_data2 }} </p>`,
   styleUrls: [ './app.component.css' ]
