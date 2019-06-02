@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
     <h3>{{title}}</h3>
-    <p><input type = "text" [value] = "display_data1" /></p>
+    <p><input type = "text" [value]="display_data1" /></p>
     <p>Display String  : {{display_data2}}</p>`,
   styleUrls: [ './app.component.css' ]
 })
