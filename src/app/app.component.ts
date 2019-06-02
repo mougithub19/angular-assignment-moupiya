@@ -4,10 +4,11 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
     <h3>{{title}}</h3>
-    <div class="label">Property Binding </div>
-    <div class="display_container"><input type = "text" [value]="display_data1" /></div>
-    <p>Event Binding : <input type = "text" (input)="display_data_fn($event.target.value)" /></p>
-    <p>Message : {{ display_data2 }} </p>`,
+    <div class="label_hd">Property Binding </div>
+    <div class="module"><input type = "text" [value]="display_data1" /></div>
+    <div class="label_hd">Event Binding </div>
+    <div class="module"><input type = "text" (input)="display_data_fn($event.target.value)" /></div>
+    <div class="label_hd">Message : {{ display_data2 }} </div>`,
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {

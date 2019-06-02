@@ -1,1 +1,28 @@
 /* Add application styles & imports to this file! */
+
+.label_hd{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+}
+input[type=text] {
+  border: 1px solid #008CBA;
+  border-radius: 4px;
+  height:30px;
+}
+button{
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;  
+}
+.module{
+  border: 1px solid grey;
+  padding: 10px;
+}
