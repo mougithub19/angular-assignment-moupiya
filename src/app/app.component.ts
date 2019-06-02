@@ -8,7 +8,9 @@ import { Component } from '@angular/core';
     <div class="module"><input type = "text" [value]="display_data1" /></div>
     <div class="label_hd">Event Binding </div>
     <div class="module"><input type = "text" (input)="display_data_fn($event.target.value)" /></div>
-    <div class="label_hd">Message : {{ display_data2 }} </div>`,
+    <div class="label_hd">Message : {{ display_data2 }} </div>
+    <div class="label_hd">Two Way Data Binding </div>
+    `,
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
