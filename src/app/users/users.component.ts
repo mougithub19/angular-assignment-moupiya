@@ -12,7 +12,14 @@ export class UsersComponent implements OnInit {
   ngOnInit() {
   }
 
-  user_data:string[]=["User1","User2","User3","User4"];
+  user_data:any[]=[
+      {
+        "id":"1",
+        "name":"User1",
+        "location":"User1",
+
+      }   
+    ];
 
 
 
