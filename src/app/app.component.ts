@@ -10,6 +10,8 @@ import { Component } from '@angular/core';
     <div class="module"><input type = "text" (input)="display_data_fn($event.target.value)" /></div>
     <div class="label_hd">Message : {{ display_data2 }} </div>
     <div class="label_hd">Two Way Data Binding </div>
+    <div class="module"><input type = "text" [(ngModel)]="display_data3" /></div>
+    <div class="label_hd">Message : {{ display_data3 }} </div>
     `,
   styleUrls: [ './app.component.css' ]
 })
@@ -17,6 +19,7 @@ export class AppComponent  {
   title = 'Angular Assignment';
   display_data1:string = "Test Data";
   display_data2:string = "";
+  display_data3:string = "Welcome";
   display_data_fn(val:string):void{
     this.display_data2=val;
   }
