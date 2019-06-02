@@ -1,8 +1,12 @@
 <div class="label_hd">User List in User Component</div>
 <div class="module">
-  <ul>
-    <li *ngFor = "let users of user_data">
-      Name : {{ users }}
-    </li>
-  </ul>
+    <table class="container">
+      <th class="container_hd">Name</th>
+      <th class="container_hd">Location</th>
+    <tr *ngFor = "let users of user_data">
+      <td class="container_body">{{ users.name }}</td>
+      <td class="container_body">{{ users.location }}</td>
+     </tr>
+    </table>
+  
 </div>
