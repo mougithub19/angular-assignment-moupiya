@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { UsersService } from './users.service';
 import { Users } from './users';
 @Component({
   selector: 'app-users',
@@ -7,13 +8,18 @@ import { Users } from './users';
 })
 export class UsersComponent implements OnInit {
 
-  constructor() {}
+  users: any[];
+  constructor(public _usersService: UsersService) {}
 
   ngOnInit() { 
+     this.userdata = this._usersService.getuserdata();
   }
+  
+
+  
   nameFilter:string="";
   today_date: Date = new Date();
-  userdata:Users[]=[
+  /*userdata:Users[]=[
       {
         "id":"1",
         "name":"User1",
@@ -32,7 +38,7 @@ export class UsersComponent implements OnInit {
         "location":"location3",
 
       }        
-    ];
+    ];*/
     @Input() countryname:string;
     emitEvent(val:string):void{ 
       this.itemclicked.emit(val);
