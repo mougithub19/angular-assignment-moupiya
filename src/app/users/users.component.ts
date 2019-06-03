@@ -11,7 +11,7 @@ export class UsersComponent implements OnInit {
 
   ngOnInit() { 
   }
-
+  today_date: Date = new Date();
   user_data:any[]=[
       {
         "id":"1",
