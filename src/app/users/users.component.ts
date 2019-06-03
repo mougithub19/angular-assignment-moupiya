@@ -34,10 +34,12 @@ export class UsersComponent implements OnInit {
       }        
     ];
     @Input() countryname:string;
-    emitEvent(val:string):void{
+    emitEvent(val:string):void{ 
       this.itemclicked.emit(val);
     }
     @Output() itemclicked:EventEmitter<string>=new EventEmitter<string>();
+
+    
 
     
 
