@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Users } from './users';
 @Component({
   selector: 'app-users',
@@ -33,7 +33,7 @@ export class UsersComponent implements OnInit {
 
       }        
     ];
-    
+    @Input() countryname:string;
 
     
 

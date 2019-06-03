@@ -21,7 +21,7 @@ export class AppComponent  {
 
       },
       {
-        "item_id":"1",
+        "item_id":"2",
         "item_name":"item2"
 
       },
@@ -31,6 +31,6 @@ export class AppComponent  {
 
       }        
     ]; 
-  constructor(){}
+  country:string = "India from App Component";
   
 }

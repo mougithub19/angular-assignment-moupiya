@@ -1,18 +1,14 @@
- <div class='users_component_container'> 
+
 <div class="label_hd">User List in User Component:</div>
-<div class="label_hd">Date : {{ today_date | date:"dd/MM/yyyy" }}</div>
-<div class="label_hd">Currency : {{ 500 | currency:"INR" }}</div>
+<div class="">Date : {{ today_date | date:"dd/MM/yyyy" }}</div>
+<div class="">Currency : {{ 500 | currency:"INR" }}</div>
+
+<div class='users_component_container'> 
 <div class="module">
-  
     <div class="label_hd">Search: 
       <input type="text"  [(ngModel)]='nameFilter' />
 
     </div>
-    
-   
-</div>
-<div class="module">
-  
     <table class="container">
       <th class="container_hd">Name</th>
       <th class="container_hd">Location</th>
@@ -26,3 +22,5 @@
    
 </div>
 </div>
+<div class="label_hd">Passing Data from Outer to Inner Component : </div>
+<div class="">{{ countryname }}</div>

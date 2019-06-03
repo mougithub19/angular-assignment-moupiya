@@ -1,16 +1,4 @@
-.container{
-  width:100%;  
-}
-.container_hd{
-  width:50%;
-  border:1px solid  black;
-  background-color:black;
-  color:white;
-}
-.container_body{
-  width:50%;
-  border:1px solid  black;;
-}
+
 .users_component_container{
   background-color: lightpink;
 }
