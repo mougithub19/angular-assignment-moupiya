@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
+  ngOnInit() { 
+   console.log("ngOnInit from app component");
+  }
+
   title = 'Angular Assignment';
   display_data1:string = "Test Data";
   display_data2:string = "";
