@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ngOnInit } from '@angular/core';
 
 @Component({
   selector: 'my-app',
