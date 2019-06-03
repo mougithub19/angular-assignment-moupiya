@@ -4,3 +4,6 @@ p {
 .highlight{
   color:red;
 }
+.app_component_container{
+  background-color: lightyellow;
+}

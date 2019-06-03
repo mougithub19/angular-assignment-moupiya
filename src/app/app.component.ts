@@ -14,7 +14,23 @@ export class AppComponent  {
   display_data_fn(val:string):void{
     this.display_data2=val;
   }
+  itemdata:Items[]=[
+      {
+        "item_id":"1",
+        "item_name":"item1"
 
+      },
+      {
+        "item_id":"1",
+        "item_name":"item2"
+
+      },
+      {
+        "item_id":"3",
+        "item_name":"item3"
+
+      }        
+    ]; 
   constructor(){}
   
 }

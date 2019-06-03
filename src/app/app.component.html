@@ -9,4 +9,22 @@
     <div class="label_hd">Message : {{ display_data3 }} </div>
     <div class="label_hd">Class Binding </div>
     <div class="module"><h3 [class.highlight]="chk">Test class binding</h3></div>
+  
+    <div class="label_hd">Item List in App Component: </div>
+    <div class="module">
+    <div class='app_component_container'>
+    <table class="container">
+      <th class="container_hd">Id</th>
+      <th class="container_hd">Name</th>
+   
+    <tr *ngFor = "let item_data of itemdata">
+      <td class="container_body">{{ item_data.item_id |uppercase }}</td>
+      <td class="container_body">{{ item_data.item_name |uppercase }}</td>
+    </tr>
+  </table>
+   </div>
+    </div>
+    
+   
     <app-users></app-users>
+    
