@@ -1,15 +1,15 @@
-import { Component, ngOnInit } from '@angular/core';
+import { Component,OnInit  } from '@angular/core';
 
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
   styleUrls: [ './app.component.css' ]
 })
-export class AppComponent  {
+export class AppComponent implements OnInit {
   ngOnInit() { 
    console.log("ngOnInit from app component");
   }
-
+  
   title = 'Angular Assignment';
   display_data1:string = "Test Data";
   display_data2:string = "";
