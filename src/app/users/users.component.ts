@@ -13,7 +13,7 @@ export class UsersComponent implements OnInit {
   }
 
   user_data:any[]=[
-      {
+      /*{
         "id":"1",
         "name":"User1",
         "location":"location1",
@@ -30,8 +30,9 @@ export class UsersComponent implements OnInit {
         "name":"User3",
         "location":"location3",
 
-      }         
+      } */        
     ];
+    alert(user_data);
 
     
 

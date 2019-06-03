@@ -1,15 +1,19 @@
 <div class="label_hd">User List in User Component</div>
 <div class="module">
-  <div ng-if="user_data.length > 0" >  
+  
     <table class="container">
       <th class="container_hd">Name</th>
       <th class="container_hd">Location</th>
-    
-    <tr *ngFor = "let users of user_data">
+   
+    <tr ng-if="user_data> 0 else elseBlock" *ngFor = "let users of user_data">
       <td class="container_body">{{ users.name }}</td>
       <td class="container_body">{{ users.location }}</td>
     </tr>
+    <tr #elseBlock >
+      <td class="container_body" colspan="2">No data found.</td>
+    </tr>
    
     </table>
-   </div> 
+    
+   
 </div>
