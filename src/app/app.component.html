@@ -27,5 +27,8 @@
     </div>
     
    
-    <app-users [countryname]="country"></app-users>
+    <app-users [countryname]="country" (itemclicked)='showMessage($event)'></app-users>
+
+    <div class="label_hd">Passing Data from Inner to Outer Component : </div>
+    <div class="module">Data from user Component : {{ display_msg }}</div>
     

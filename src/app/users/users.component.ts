@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { Users } from './users';
 @Component({
   selector: 'app-users',
@@ -34,6 +34,10 @@ export class UsersComponent implements OnInit {
       }        
     ];
     @Input() countryname:string;
+    emitEvent(val:string):void{
+      this.itemclicked.emit(val);
+    }
+    @Output() itemclicked:EventEmitter<string>=new EventEmitter<string>();
 
     
 

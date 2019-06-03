@@ -14,7 +14,7 @@
       <th class="container_hd">Location</th>
    
     <tr *ngFor = "let user_data of userdata | users : nameFilter">
-      <td class="container_body">{{ user_data.name |uppercase }}</td>
+      <td class="container_body"><a (click)='emitEvent(user_data.id)'>{{ user_data.name |uppercase }}</a></td>
       <td class="container_body">{{ user_data.location |uppercase }}</td>
     </tr>
     </table>

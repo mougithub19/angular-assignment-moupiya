@@ -32,5 +32,9 @@ export class AppComponent  {
       }        
     ]; 
   country:string = "India from App Component";
+  display_msg:string="";
+  showMessage(value:string):void{
+    this.display_msg=value;
+  }
   
 }
