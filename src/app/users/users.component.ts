@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Users } from './users';
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
@@ -11,8 +11,9 @@ export class UsersComponent implements OnInit {
 
   ngOnInit() { 
   }
+  nameFilter:string="";
   today_date: Date = new Date();
-  user_data:any[]=[
+  userdata:Users[]=[
       {
         "id":"1",
         "name":"User1",
@@ -39,3 +40,4 @@ export class UsersComponent implements OnInit {
 
 
 }
+

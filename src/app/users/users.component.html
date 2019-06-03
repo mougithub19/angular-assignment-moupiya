@@ -4,7 +4,7 @@
 <div class="module">
   
     <div class="label_hd">Search: 
-      <input type="text" />
+      <input type="text"  [(ngModel)]='nameFilter' />
 
     </div>
     
@@ -16,9 +16,9 @@
       <th class="container_hd">Name</th>
       <th class="container_hd">Location</th>
    
-    <tr *ngFor = "let users of user_data">
-      <td class="container_body">{{ users.name |uppercase }}</td>
-      <td class="container_body">{{ users.location | lowercase }}</td>
+    <tr *ngFor = "let user_data of userdata | users : nameFilter">
+      <td class="container_body">{{ user_data.name |uppercase }}</td>
+      <td class="container_body">{{ user_data.location | lowercase }}</td>
     </tr>
     </table>
     
