@@ -10,7 +10,14 @@ export class UsersComponent implements OnInit {
 
   userdata: any[];
   constructor(public _usersService: UsersService) {}
-
+  
+  /*
+  title : string = "Http Service Demo";
+  userdata: any;
+  constructor(private _usersService: UsersService) {
+  }ngOnInit() {
+    this._usersService.getuserdata().subscribe(userdata => this.userdata = userdata);
+  }*/
   ngOnInit() { 
      this.userdata = this._usersService.getuserdata();
   }
