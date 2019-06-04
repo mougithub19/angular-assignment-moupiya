@@ -14,14 +14,30 @@ input[type=text] {
   border-radius: 4px;
   height:30px;
 }
+
 nav{
-  background-color: #008CBA; /* Green */
-  border: none;
+  background-color: rgb(213, 231, 230); 
   color: white;
   padding: 10px 15px;
   text-decoration: none;
   display: inline-block;  
-  width:100%
+  width:100%;
+  border: 1px solid rgb(13, 8, 37);
+}
+button{
+  
+  background-color:whitesmoke;
+  border: none;
+  color: rgb(239, 229, 245);
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 4px;
+  cursor: pointer;
+  border: 1px solid #008CBA;
+  
 }
 .module{
   border: 1px solid grey;
